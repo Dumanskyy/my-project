@@ -1,0 +1,61 @@
+.block {
+  border: 2px solid;
+  width: 400px;
+  height: 200px;
+  position: relative;
+  left: ;
+  right: ;
+  top: ;
+  bottom: ;
+}
+.block_1 {
+  border: 2px solid;
+  width: 400px;
+  height: 200px;
+  position: relative; /*позиціювання його в його місці в якому він мав бути в потоці строки*/
+  left: 20px;
+  right: ;
+  top: 20px;
+  bottom: ;
+}
+.block_2 {
+  border: 2px solid red;
+  width: 400px;
+  height: 200px;
+  position: absolute; /*плавающий позиціювання відбувається від параметрів вікна*/
+  top: 20px;
+  left: 20px;
+}
+.block_3 {
+  border: 2px solid blue;
+  width: 400px;
+  height: 200px;
+  position: fixed; /*коли скролити прокручувати сторінку то всерухається окрім нього, без налаштувань стає на своє місце в потоці*/
+  top: 21px;
+  left: 21px;
+  z-index: 1; /*вісь блока по відношеннб до других по пендикулярній вісі(вісь z) простими словами блок випливає поверх блоків*/
+}
+.block_4 {
+  border: 2px solid rgb(1, 0, 0);
+  width: 400px;
+  height: 200px;
+  position: relative;
+}
+.block_4 div {
+  border: 2px solid;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  /*тут показано блок спозиційований в блоку щоб дочерний спозиційонувати потрібно в батьківському прописувати релатів і дочерний буде переміщатись тільки в батьківському блоці*/
+}
+.block_5 {
+  border: 1px solid green;
+  overflow: hidden; /*типу щоб блок не захлопувався через флот*/
+}
+
+.block_5 p {
+  border: 1px solid green;
+  float: left; /*типу робить з блочних строчні, батьківський блок їх п не бачить  і він схлопується*/
+}
